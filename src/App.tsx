@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { AdviceSection, Wrapper } from './app.style'
 
 interface Advice {
   slip: {
@@ -28,9 +29,15 @@ export const App = () => {
 
   return (
     <>
-      <h1>{data.slip.id}</h1>
-      <h2>{data.slip.advice}</h2>
-      <button onClick={fetchAdvice}>Get Advice</button>
+      <Wrapper>
+        <AdviceSection>
+          <div className="advice-content">
+            <h1>{data.slip.id}</h1>
+            <h2>{data.slip.advice}</h2>
+            <button onClick={fetchAdvice}>Get Advice</button>
+          </div>
+        </AdviceSection>
+      </Wrapper>
     </>
   )
 }

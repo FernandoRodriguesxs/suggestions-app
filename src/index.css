@@ -5,6 +5,9 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body{
+  background-color: #ecddff;
+}
 a {
   text-decoration: none;
 }
